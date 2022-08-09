@@ -66,6 +66,12 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     vendor.display.config@2.0 \
     libdisplayconfig.qti
 
+# F2FS utilities
+PRODUCT_PACKAGES += \
+    sg_write_buffer \
+    f2fs_io \
+    check_f2fs
+
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
