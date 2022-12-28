@@ -7,6 +7,9 @@ on init
     mkdir /dev/fscklogs 0770 root system
     setprop prepdecrypt.loglevel 2
 
+on early-init
+    start set_permissive
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -18,3 +21,10 @@ on fs
 on boot
     start health-hal-2-1
     setprop sys.usb.config adb
+
+service set_permissive /system/bin/set_permissive.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
