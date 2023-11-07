@@ -1,4 +1,4 @@
-# Ofox(12.1) Device Tree for Mi A3 (laurel_sprout)
+# TWRP Device Tree for Mi A3 (laurel_sprout)
 
 The Mi A3 (codenamed "laurel_sprout") is a mid-range smartphone from Xiaomi. It was announced and released in July 2019.
 
@@ -28,9 +28,20 @@ The Mi A3 (codenamed "laurel_sprout") is a mid-range smartphone from Xiaomi. It 
 
 ![Mi A3](http://i01.appmifile.com/webfile/globalimg/products/pc/mi-a3/specs2.png)
 
-## Copyright
+## Features
 
-```
-#
-# Copyright (C) 2023 The OrangeFOX Recovery Project
-#
+Works:
+
+- ADB
+- Decryption of /data
+- Screen brightness settings
+- Correct screenshot color
+- MTP
+- Flashing (opengapps, roms, images and so on)
+- Backup/Restore
+- USB OTG
+- Touch
+
+Bugs:
+
+- Vibration 
